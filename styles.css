@@ -1,0 +1,243 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'RobotoL', sans-serif;
+    font-weight: 300;
+}
+
+
+/* ------------------ GLOBAL ELEMENTS */
+
+
+/* Style the links inside the navigation bar */
+.topnav a ,ul,li{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ff5500;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  @font-face {
+    font-family: 'RobotoR';
+    font-weight: 400;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'RobotoL';
+    font-weight: 300;
+    src: url('assets/fonts/Roboto-Light.ttf');
+}
+a,
+a:active,
+a:visited,
+a:focus {
+    color: #ff5500;
+    text-decoration: none;
+}
+a:hover {
+    color: #a20d01;
+}
+/* #SubmitBtn {
+    background: #f50;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #ca4502;
+    cursor: pointer;
+} */
+    /* #SubmitBtn:hover
+    ,button:hover,
+    input[type="button"]:hover {
+        background: #a20d01;
+    }
+    button a,
+    button a:hover,
+    button a:active,
+    button a:visited,
+    button a:focus {
+        color: #fff;
+        text-decoration: none;
+    } */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'RobotoR';
+    color: #000;
+}
+
+body > main {
+    margin: 15px 0 0 0;
+    text-align:center;
+}
+
+body > footer {
+    background: #ccc;
+    border-top: 3px solid #808080;
+}
+    body > footer p {
+        color: #616161;
+        font-size: 13px;
+        text-align: center;
+        margin: 0;
+        padding: 25px 0;
+    }
+
+body > header {
+    box-shadow: 0px 4px 1px 2px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+    body > header .main-logo {
+        color: #000;
+        margin: 0 200px;
+        padding: 12.5px 0;
+    }
+    /* body > header ul,
+    body > header ul li {
+        list-style: none;
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 5px;
+        padding-top: 1.5px;
+    } */
+
+
+    /* ------------------ HOMEPAGE */
+
+section.hero {
+    background: url("assets/images/hello-image.jpg") no-repeat center center;
+    /* background-size: 100%; */
+    width:auto;
+    height: 500px;
+    padding: 100px 0 70px 0;
+}
+    section.hero form {
+        background: #fff;
+        width: 30%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 25px;
+        border-radius: 12px;
+    }
+        section.hero form .action {
+            margin-top: 20px;
+        }
+      
+        section.hero form select,input{
+          height: 50px;
+          width:120px;
+          box-sizing:border-box;
+        }
+        #SubmitBtn {
+            background: #f50;
+            color: #fff;
+            border: none;
+            border-bottom: 1px solid #ca4502;
+            cursor: pointer;
+            border: none;
+            padding: 12px 20px 12px 45px;
+            font-size: 16px;
+            line-height: 16px;
+            font-family: 'RobotoL';
+            border-radius: 6px;
+            background: url('assets/images/icons/user.png') no-repeat left 15px center #f50;
+            background-size: 18px;
+            width: auto;
+        }
+        #SubmitBtn:hover {
+            background: url('assets/images/icons/user.png') no-repeat left 15px center #a20d01;
+            background-size: 18px;
+        }
+
+    section.hero h1 {
+        color: #fff;
+        text-shadow: 2px 2px 2px #fff;
+        text-align: center;
+    }
+
+
+    /* ------------------ MEDIA QUERIES */
+
+@media (max-width: 1004px) {
+    .container {
+        width: 804px;
+    }
+    section.hero {
+        background-size: cover;
+    }
+    /* section.hero form {
+        width: 60%;
+    } */
+    .main-logo{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 804px) {
+    
+    .container {
+        width: 404px;
+    }
+    section.hero form {
+        width: 40%;
+    }
+        section.hero form input,
+        section.hero form select,
+        section.hero form textarea {
+            width: 80%;
+        }
+}
+
+
+@media (max-width: 604px) {
+    
+    .container {
+        width: 60%;
+    }
+    section.hero form {
+        width: 40%;
+    }
+        section.hero form input,
+        section.hero form select,
+        section.hero form textarea {
+            width: 100%;
+        }
+}
+
+@media (max-width: 404px) {
+    
+    .container {
+        width: 100%;
+    }
+    section.hero form {
+        width: 80%;
+    }
+        section.hero form input,
+        section.hero form select,
+        section.hero form textarea {
+            width: 100%;
+        }
+}
